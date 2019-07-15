@@ -1,0 +1,13 @@
+<section class="row screen-viewer">
+  <div class="col-md-6 claim-data">
+    <div *ngFor="let group of userGroupList">
+      <div class="text-data text-info">
+        You've {{group.amount}} {{group.price}} to use now
+      </div>
+      <div class="image-data">
+        <img [src]="fullImagePath">
+      </div>
+
+    </div>
+  </div>
+</section>

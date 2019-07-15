@@ -1,0 +1,12 @@
+<div class="container screen-viewer">
+  <div class="claim-data row">
+    <div *ngFor="let group of userGroupList" class="column">
+      <div class="text-data">
+        {{group.amount}} {{group.price}} <br>on {{group.game}}
+      </div>
+     
+      <div class="timer-data">00: {{timeLeft}}</div>
+    </div>
+    <button button (click)="claimButton()" class="button button5">Claim now</button>   
+  </div>
+</div>
